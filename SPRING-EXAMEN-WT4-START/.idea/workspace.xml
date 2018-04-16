@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bbe55d1-f694-4942-80ce-c48b984d2823" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ap/spring/controller/InhaalExamenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ap/spring/controller/InhaalExamenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ap/spring/model/InhaalExamen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ap/spring/model/InhaalExamen.java" afterDir="false" />
-    </list>
+    <list default="true" id="4bbe55d1-f694-4942-80ce-c48b984d2823" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,7 +38,7 @@
       <file leaf-file-name="InhaalExamenController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ap/spring/controller/InhaalExamenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="91">
               <caret line="75" column="80" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -195,6 +192,57 @@
               <item name="spring" type="462c0819:PsiDirectoryNode" />
               <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring-examen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SPRING-EXAMEN-WT4-START" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-examen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SPRING-EXAMEN-WT4-START" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-examen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SPRING-EXAMEN-WT4-START" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-examen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SPRING-EXAMEN-WT4-START" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="ap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-examen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SPRING-EXAMEN-WT4-START" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="ap" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-examen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SPRING-EXAMEN-WT4-START" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="ap" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -231,12 +279,58 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SpringTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="DjangoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-examen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ap.spring.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.ap.spring.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.ap.spring.test.DjangoTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SpringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-examen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ap.spring.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.ap.spring.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.ap.spring.test.SpringTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -301,8 +395,15 @@
       <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ExamenApplication" />
+      <item itemvalue="JUnit.SpringTest" />
+      <item itemvalue="JUnit.DjangoTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringTest" />
+        <item itemvalue="JUnit.DjangoTest" />
         <item itemvalue="Spring Boot.ExamenApplication" />
       </list>
     </recent_temporary>
@@ -317,16 +418,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523877743236</updated>
-      <workItem from="1523877746598" duration="5899000" />
+      <workItem from="1523877746598" duration="6785000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SpringTest - 2018.04.16 at 15h 33m 18s.xml">
+      <configuration name="SpringTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DjangoTest - 2018.04.16 at 15h 34m 42s.xml">
+      <configuration name="DjangoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringTest - 2018.04.16 at 15h 35m 12s.xml">
+      <configuration name="SpringTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5899000" />
+    <option name="totallyTimeSpent" value="6785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -345,10 +456,10 @@
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5460993" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32978722" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" side_tool="true" />
@@ -401,7 +512,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ap/spring/controller/InhaalExamenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="91">
           <caret line="75" column="80" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
