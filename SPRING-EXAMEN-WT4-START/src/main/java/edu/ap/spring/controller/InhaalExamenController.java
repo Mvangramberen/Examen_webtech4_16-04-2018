@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Set;
 
 @RestController
 public class InhaalExamenController {
@@ -50,11 +51,30 @@ public class InhaalExamenController {
 
     }
 
-    @RequestMapping("/lijst")
-    public String getAanvragen(){
-        String lijstMetAanvragen;
+    @RequestMapping("/lijst/{voornaam}")
+    public String getAanvragen(@PathVariable String voornaam){
+        String lijstMetAanvragen = "<table>" +
+                "<tr>" +
+                "<th>Naam</th><th>Vak</th><th>Datum van aanvraag</th><th>Reden</th>" +
+                "</tr>";
 
+        Set<String> keys = service.keys(voornaam +"*");
 
+        java.util.Iterator<String> it = keys.iterator();
+
+        System.out.println("Aanvragen voor " + voornaam + ":");
+        while(it.hasNext()) {
+            String s = it.next();
+            String[] aAanvraag = service.getKey(s).split(":");
+
+            lijstMetAanvragen += "<tr>" +
+                    "<td>" + aAanvraag[0] + "</td>" +
+                    "<td>" + aAanvraag[1] + "</td>" +
+                    "<td>" + aAanvraag[2] + "</td>" +
+                    "<td>" + aAanvraag[5] + "</td>";
+        }
+
+        lijstMetAanvragen += "</table>";
 
         return lijstMetAanvragen;
 
