@@ -61,6 +61,6 @@ public class InhaalExamen {
 
 	@Override
 	public String toString() {
-		return student + ":" + exam + ":" + date + ":" + reason;
+		return reason + ":" + exam + ":" + date + ":" + student;
 	}
 }

@@ -8,9 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Set;
+import java.util.*;
 
 @RestController
 public class InhaalExamenController {
@@ -53,26 +51,37 @@ public class InhaalExamenController {
 
     @RequestMapping("/lijst/{voornaam}")
     public String getAanvragen(@PathVariable String voornaam){
+        ArrayList<String> listRequests = new ArrayList<>();
+
+        // Begin van HTML tabel
         String lijstMetAanvragen = "<table>" +
                 "<tr>" +
                 "<th>Naam</th><th>Vak</th><th>Datum van aanvraag</th><th>Reden</th>" +
                 "</tr>";
 
+        // Alle keys in redis terug halen
         Set<String> keys = service.keys(voornaam +"*");
 
         java.util.Iterator<String> it = keys.iterator();
 
-        System.out.println("Aanvragen voor " + voornaam + ":");
+        // door alle keys heenlopen en daar de values van terug halen
         while(it.hasNext()) {
             String s = it.next();
-            String[] aAanvraag = service.getKey(s).split(":");
-
-            lijstMetAanvragen += "<tr>" +
-                    "<td>" + aAanvraag[0] + "</td>" +
-                    "<td>" + aAanvraag[1] + "</td>" +
-                    "<td>" + aAanvraag[2] + "</td>" +
-                    "<td>" + aAanvraag[5] + "</td>";
+            listRequests.add(service.getKey(s));
         }
+
+        // Sorteren op reason
+            Collections.sort(listRequests);
+
+        // Per item in de arraylist, in de HTML tabel steken en deze terug geven
+        for (String request: listRequests ) {
+
+        String[] aAanvraag = request.split(":");
+        lijstMetAanvragen += "<tr>" +
+                "<td>" + aAanvraag[5] + "</td>" +
+                "<td>" + aAanvraag[1] + "</td>" +
+                "<td>" + aAanvraag[2] + "</td>" +
+                "<td>" + aAanvraag[0] + "</td>";}
 
         lijstMetAanvragen += "</table>";
 
